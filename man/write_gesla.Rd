@@ -32,7 +32,7 @@ If \code{x} is an \code{ArrowObject}, then the resulting file will have the
 \code{.parquet} extension, in the \href{https://parquet.apache.org}{Apache Parquet} file format. If \code{x} is a
 \code{data.frame}, the file will have a standard \code{.csv} extension.
 
-This function is usefull to save objects created by the
+This function is useful to save objects created by the
 \code{query_gesla()} function, for example. However, it may be used in
 any case where saving a (possible subset) of the GESLA dataset may
 be needed.
@@ -75,5 +75,5 @@ unlink(paste0(tmp, "/gesla-data.parquet"))
 unlink(paste0(tmp, "/ireland.parquet"))
 }
 \author{
-Fernando Mayer \email{fernando.mayer@mu.ie}
+Fernando Mayer \email{fernando.mayer@ufpr.br}
 }

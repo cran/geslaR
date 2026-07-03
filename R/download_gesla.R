@@ -7,7 +7,7 @@
 ##' you can use the [geslaR::query_gesla()] function, to directly import
 ##' a subset of it.
 ##'
-##' @details This function should only be usefull if you want to deal
+##' @details This function should only be useful if you want to deal
 ##' with all the files from the GESLA dataset. If you need only a
 ##' subset, you can use the [geslaR::query_gesla()] function, or the
 ##' GESLA Shiny app interface, from the [geslaR::run_gesla_app()]
@@ -26,7 +26,7 @@
 ##' @return The whole GESLA dataset, consisting of 5119 files (with
 ##' `.parquet` extension). It should have approximately 7GB in size.
 ##'
-##' @author Fernando Mayer \email{fernando.mayer@mu.ie}
+##' @author Fernando Mayer \email{fernando.mayer@ufpr.br}
 ##'
 ##' @example inst/examples/download_gesla-ex.R
 ##'

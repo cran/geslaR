@@ -13,7 +13,7 @@ read_gesla(file, as_data_frame = FALSE, ...)
 as an Arrow \code{Table} format. Otherwise, the data will be in a
 \code{tbl_df} (\code{data.frame}) format. See Details.}
 
-\item{...}{Other arguments from \code{\link[arrow:read_delim_arrow]{arrow::read_csv_arrow()}}, and
+\item{...}{Other arguments from \code{\link[arrow:read_csv_arrow]{arrow::read_csv_arrow()}}, and
 \code{\link[arrow:read_parquet]{arrow::read_parquet()}}, from the
 \href{https://arrow.apache.org/docs/r/}{arrow} package.}
 }
@@ -29,16 +29,13 @@ Parquet file formats. Whichever option is chosen this function will
 automatically identify the file type and use the appropriate
 functions to import the dataset to R.
 
-This function can be used for exported files from the online
-interface (hosted in this
-\href{https://rstudio.maths.nuim.ie:3939/content/3258adf1-efbb-4996-9a8a-08a474639e8b/}{server})
-or from a local interface, as when using the
-\code{\link[=run_gesla_app]{run_gesla_app()}} function.
+This function can be used for exported files from the geslaR-app
+interface, run locally with the \code{\link[=run_gesla_app]{run_gesla_app()}} function.
 }
 \details{
 We highly recommend to export subsets of the GESLA dataset
 from the geslaR-app in the Parquet file format. This format has a
-much smaller file size when comparred to the CSV format.
+much smaller file size when compared to the CSV format.
 
 In any case, the only difference between CSV and Parquet files will
 be the file size. However, when importing these data to R, both
@@ -102,5 +99,5 @@ unlink(paste0(tmp, "/ireland.parquet"))
 unlink(paste0(tmp, "/ireland.csv"))
 }
 \author{
-Fernando Mayer \email{fernando.mayer@mu.ie}
+Fernando Mayer \email{fernando.mayer@ufpr.br}
 }

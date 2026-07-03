@@ -1,8 +1,8 @@
 Package: geslaR
 Title: Get and Manipulate the GESLA Dataset
-Version: 1.0-1
+Version: 1.0-3
 Authors@R: 
-    c(person("Fernando", "Mayer", , "fernando.mayer@mu.ie", role = c("aut", "cre"),
+    c(person("Fernando", "Mayer", , "fernando.mayer@ufpr.br", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5115-338X")),
       person("Niamh", "Cahill", , "niamh.cahill@mu.ie", role = c("aut"),
            comment = c(ORCID = "0000-0003-3086-550X")))
@@ -20,7 +20,7 @@ RoxygenNote: 7.2.3
 URL: https://github.com/EireExtremes/geslaR,
         https://eireextremes.github.io/geslaR/
 BugReports: https://github.com/EireExtremes/geslaR/issues
-Depends: arrow, dplyr, R (>= 3.5.0)
+Depends: arrow, dplyr, R (>= 4.1.0)
 Imports: cli
 Suggests: bslib, DT, knitr, leaflet, leafpop, lubridate, patchwork,
         plotly, rmarkdown, shiny, shinyalert, shinycssloaders,
@@ -29,9 +29,10 @@ SystemRequirements: arrow
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-10-06 17:47:13 UTC; mayer
-Author: Fernando Mayer [aut, cre] (<https://orcid.org/0000-0001-5115-338X>),
-  Niamh Cahill [aut] (<https://orcid.org/0000-0003-3086-550X>)
-Maintainer: Fernando Mayer <fernando.mayer@mu.ie>
+Packaged: 2026-07-03 00:17:02 UTC; mayer
+Author: Fernando Mayer [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-5115-338X>),
+  Niamh Cahill [aut] (ORCID: <https://orcid.org/0000-0003-3086-550X>)
+Maintainer: Fernando Mayer <fernando.mayer@ufpr.br>
 Repository: CRAN
-Date/Publication: 2023-10-09 13:20:02 UTC
+Date/Publication: 2026-07-03 08:40:13 UTC

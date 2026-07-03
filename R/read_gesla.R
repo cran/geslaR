@@ -8,15 +8,12 @@
 ##' automatically identify the file type and use the appropriate
 ##' functions to import the dataset to R.
 ##'
-##' This function can be used for exported files from the online
-##' interface (hosted in this
-##' [server](https://rstudio.maths.nuim.ie:3939/content/3258adf1-efbb-4996-9a8a-08a474639e8b/))
-##' or from a local interface, as when using the
-##' [geslaR::run_gesla_app()] function.
+##' This function can be used for exported files from the geslaR-app
+##' interface, run locally with the [geslaR::run_gesla_app()] function.
 ##'
 ##' @details We highly recommend to export subsets of the GESLA dataset
 ##' from the geslaR-app in the Parquet file format. This format has a
-##' much smaller file size when comparred to the CSV format.
+##' much smaller file size when compared to the CSV format.
 ##'
 ##' In any case, the only difference between CSV and Parquet files will
 ##' be the file size. However, when importing these data to R, both
@@ -48,16 +45,17 @@
 ##'
 ##' @return An Arrow `Table` object, or a `tbl_df` (`data.frame`)
 ##'
-##' @author Fernando Mayer \email{fernando.mayer@mu.ie}
+##' @author Fernando Mayer \email{fernando.mayer@ufpr.br}
 ##'
 ##' @example inst/examples/read_gesla-ex.R
 ##'
 ##' @importFrom arrow read_csv_arrow read_parquet
 ##' @importFrom cli format_error
+##' @importFrom utils tail
 ##'
 ##' @export
 read_gesla <- function(file, as_data_frame = FALSE, ...) {
-    ftype <- unlist(strsplit(file, split = "\\."))[2]
+    ftype <- tail(unlist(strsplit(file, split = "\\.")), n = 1)
     if(!ftype %in% c("csv", "parquet")) {
         stop(format_error(c("",
             "x" = "'file' must be csv or parquet.")))
